@@ -7,13 +7,18 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 2rem 9%;
+    // width: 100%;
+    width: calc(100% - 24px);
+    padding: 1.8rem 9%;
     background: var(--bg-color);
+    // background: red;
+    // background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    margin: 12px;
+    border-radius: 12px;
 }
 
 .logo {
@@ -23,20 +28,20 @@ section {
     cursor: default;
 }
 
-.navbar   a {
+.navbar a {
     font-size: 1.5rem;
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 700;
 }
 
-.navbar a:hover  {
-   border-bottom: 1px solid var(--text-color) ;
+.navbar a:hover {
+    border-bottom: 1px solid var(--text-color);
 }
 
-.navbar a:active{
-   border-bottom: 1px solid var(--text-color);
-    }
+.navbar a:active {
+    border-bottom: 1px solid var(--text-color);
+}
 
 #menu-icon {
     font-size: 3.6rem;
@@ -45,23 +50,69 @@ section {
 }
 
 .home {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../../assets/images/bg1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: rgba(0, 0, 0, 0.5); 
+    // background: radial-gradient(circle, rgba(25,31,54,0.4654236694677871) 0%, rgba(0,0,0,0.8883928571428571) 100%);
+    background: radial-gradient(circle, rgba(25, 31, 54, 0.7455357142857143) 0%, rgba(0, 0, 0, 0.9360119047619048) 100%);
+
+    z-index: 1;
+}
+
+.home>* {
+    position: relative;
+    z-index: 2;
+}
+
 
 .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
-}
-.home-content h3 span {
-   color: var(--main-color);
-   padding-right: 1.1rem;
-   border-right: 4px solid red;
-   white-space:  nowrap;
-   overflow: hidden;
+    // border: 1px solid rgb(0, 255, 55);
+    display: inline-block;
 
 }
+
+.home-content h3 span {
+    color: var(--main-color);
+    //    padding-right: 1.1rem;
+    // border-right: 4px solid red;
+    // width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+    cursor .4s step-end infinite alternate,
+    typing 2s steps(20);
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+       width: 0;
+    }
+}
+
 
 .home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
@@ -432,8 +483,8 @@ section {
         display: none;
     }
 
-    .navbar .active{
-       display: block;
+    .navbar .active {
+        display: block;
     }
 
     .about {
