@@ -1,0 +1,45 @@
+.heading {
+    font-size: 6rem;
+    line-height: 8rem;
+    font-weight: 900;
+    // text-shadow: 2px 2px 5px var(--sd-bg-color); 
+}
+.about{
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+}
+.about P{
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: var(--sd-bg-color);
+    margin: 4rem 0 3rem 0 ;
+}
+.contact-card{
+    display: flex;
+
+}
+.contact-details {
+    font-size: 2rem;
+}
+.contact-details span {
+    display: block;
+    margin:   24px 6px ;
+}
+.details > span{
+    color: var(--sd-bg-color);
+}
+.contact-details li span {
+    margin-right: 10px;
+}
+.subContainer{
+    display: flex;
+    align-items: center;
+    // border: 1px solid red;
+    // justify-content: center;
+}
+
+.subContainer img{
+    width: 25rem;
+}

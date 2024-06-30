@@ -8,20 +8,61 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: "Nunito", sans-serif;
+    line-height: 2rem;
+    font-weight: 600;
 }
 
 :root {
-    --bg-color: #191f36;
-    --sd-bg-color:#262840;
+    --bg-color: #000000;
+    --sd-bg-color:#585858;
+    --sd-tr-bg-color:#292929;
     --text-color:#fff;
-    --main-color:#59b3f4;
+    --main-color:#FFBD39;
 }
+// .pbg{
+//     color: var(--bg-color);
+// }
+// .sbg{
+//     color: var(--sd-bg-color);
+// }
+// .tc{
+// color: var(--text-color);
+// }
+// .mcol{
+// color: var(--main-color);
+// }
+
 html{
     font-size: 62.5%;
-    // overflow: hidden;
+    padding: 0 20rem;
+    // background-color: #FFBD39;
 }
 
 body {
 background-color:var(--bg-color);
 color: var(--text-color);
+}
+
+.container {
+    display: grid;
+    height: 74vh;
+    grid-template-columns: 1fr 1fr;
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    // border: 1px solid rgb(0, 255, 34);
+
+}
+
+.subContainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // border: 1px solid red;
+
 }

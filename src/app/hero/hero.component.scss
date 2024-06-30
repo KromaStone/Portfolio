@@ -1,0 +1,168 @@
+.mainColor {
+    color: var(--main-color);
+}
+
+.hello {
+    font-size: 3rem;
+}
+
+.heading {
+    font-size: 8rem;
+    line-height: 8rem;
+    font-weight: 900;
+}
+.heading > span{
+    font-weight: 900;
+}
+
+.hero1{
+    // position: absolute;
+// display: none;
+    animation: beat 8s linear infinite;
+}
+
+.hero2 {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: beat2 8s linear infinite;
+}
+.hireMe {
+    border-radius: 3rem;
+    border: none;
+    padding: 1.2rem 2.6rem;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-right: .8rem;
+}
+
+div .hireMe:hover {
+    border: 1px solid var(--main-color);
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    padding: 1.2rem 2.6rem;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.myWork {
+    border-radius: 3rem;
+    padding: 1.2rem 2.6rem;
+    border: 1px solid var(--main-color);
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.myWork:hover {
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+
+.subContainer2 > img{
+    // width: 400px;
+    height: 400px;
+}
+
+@keyframes beat {
+
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+@keyframes beat2 {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
