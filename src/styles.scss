@@ -1,3 +1,39 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the theme object.
+$kartikkumar-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$azure-palette,
+    tertiary: mat.$blue-palette,
+  ),
+  density: (
+    scale: 0,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+:root {
+  @include mat.all-component-themes($kartikkumar-theme);
+}
+
+// Comment out the line below if you want to use the pre-defined typography utility classes.
+// For more information: https://material.angular.io/guide/typography#using-typography-styles-in-your-application.
+// @include mat.typography-hierarchy($kartikkumar-theme);
+
+// Comment out the line below if you want to use the deprecated `color` inputs.
+// @include mat.color-variants-backwards-compatibility($kartikkumar-theme);
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
@@ -54,6 +90,7 @@ color: var(--text-color);
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    height: auto;
     // border: 1px solid rgb(0, 255, 34);
 
 }
@@ -65,4 +102,143 @@ color: var(--text-color);
     width: 100%;
     // border: 1px solid red;
 
+}
+section {
+//   min-height: 80vh;
+  padding: 10rem 0;
+}
+
+
+.heading {
+  text-align: center;
+  font-size: 4.6rem;
+  font-weight: 700;
+}
+
+// h2.heading {
+//     font-size: 4.6rem;
+//     font-weight: 800;
+// }
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
+.btn:hover {
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #menu-icon {
+      display: block;
+  }
+
+  .home {
+      flex-direction: column;
+  }
+
+  .home-content h3 {
+      font-size: 2.6rem;
+  }
+
+  .home-content {
+      border: 2rem;
+  }
+
+  .home-content h1 {
+      font-size: 5rem;
+  }
+
+  .home-img img {
+      width: 70vw;
+      margin-top: 4rem;
+  }
+
+  .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: var(--bg-color);
+      border-top: 1rem solid rgba(0, 0, 0, 0.2);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+      display: none;
+  }
+
+  .navbar .active {
+      display: block;
+  }
+
+  .about {
+      flex-direction: column;
+
+  }
+
+  .about-img img {
+      width: 90vw;
+      margin-top: 4rem;
+  }
+
+  .services h2 {
+      margin-bottom: 3rem;
+  }
+
+  .portfolio h2 {
+      margin-bottom: 3rem;
+  }
+
+  .portfolio-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 617px) {
+  .portfolio-container {
+      grid-template-columns: 1fr;
+  }
+
+  .home-img img {
+      width: 80vw;
+      margin-top: 8rem;
+
+      .about-img img {
+          width: 100vw;
+          margin-top: 4rem;
+      }
+  }
+
+}
+
+@media (max-width: 450px) {
+  html {
+      font-size: 50%;
+  }
+
+  .contact form .input-box input {
+      width: 100%;
+  }
+}
+
+
+@media (max-width: 320pc) {
+  .btn {
+      padding: 1rem 01.4rem;
+  }
 }

@@ -1,0 +1,56 @@
+.skills-contianer {
+    text-align: center;
+    padding:  8rem 0;
+}
+
+.skills-contianer>h2 {
+    font-size: 6rem;
+    line-height: 8rem;
+    font-weight: 900;
+}
+.skills-contianer p{
+font-size: 1.6rem;
+color: var(--sd-bg-color);
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 8rem;
+    // border: 1px solid forestgreen;
+    // padding: 4rem;
+    // margin: 4rem;
+}
+span.mdc-linear-progress__bar-inner {
+    border-width: 20px;
+    border: 10px solid red !important;
+} 
+
+.mdc-linear-progress__bar-inner {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    animation: none;
+    border-top-style: solid;
+border-color: red !important;
+    // border-top-width: var(--mdc-linear-progress-active-indicator-height);
+}
+
+.mdc-linear-progress__bar .mdc-linear-progress__primary-bar{
+height: 50px;
+color: red;
+background-color: red;
+height: 106px;
+border: 20px solid red;
+}
+h2.heading {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+
+
+
+
+
