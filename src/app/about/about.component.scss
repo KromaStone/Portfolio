@@ -4,42 +4,109 @@
     font-weight: 900;
     // text-shadow: 2px 2px 5px var(--sd-bg-color); 
 }
-.about{
+
+.about {
     // border: 1px solid red;
     display: flex;
     flex-direction: column;
-justify-content: center;
+    justify-content: center;
 }
-.about P{
+
+.about P {
     font-size: 2rem;
     line-height: 2.6rem;
     color: var(--sd-bg-color);
-    margin: 4rem 0 3rem 0 ;
+    margin: 4rem 0 3rem 0;
 }
-.contact-card{
+
+.contact-card {
     display: flex;
 
 }
+
 .contact-details {
     font-size: 2rem;
 }
+
 .contact-details span {
     display: block;
-    margin:   24px 6px ;
+    margin: 24px 6px;
 }
-.details > span{
+
+.details>span {
     color: var(--sd-bg-color);
 }
+
 .contact-details li span {
     margin-right: 10px;
 }
-.subContainer{
+
+.subContainer {
     display: flex;
     align-items: center;
     // border: 1px solid red;
     // justify-content: center;
 }
 
-.subContainer img{
+.subContainer img {
     width: 25rem;
+}
+
+.download-resume-btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    margin-top: 20px;
+    border: 0;
+}
+
+.download-resume-btn:hover {
+    box-shadow: none;
+-webkit-animation: stopBounce ;
+transition: .5s ease;
+cursor: pointer;
+}
+
+@media (max-width: 320pc) {
+    .download-resume-btn {
+        padding: 1rem 01.4rem;
+    }
+}
+
+.bounce {
+    -webkit-animation: bounce .4s ease infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        text-shadow:
+            0 5px 0 #ccc,
+            0 2px 3px rgba(0, 0, 0, 1);
+    }
+
+    100% {
+        transform: translateY(-20px);
+        text-shadow: 0 50px 0 black,
+            0 0px 20px rgba(0, 0, 0, .8);
+    }
+}
+
+@-webkit-keyframes stopBounce {
+    0% {
+        transition: .5s ease;
+    }
+
+    100% {
+        transform: translateY(-10px);
+        text-shadow: 0 50px 0 black,
+            0 0px 20px rgba(0, 0, 0, .8);
+            transition: .5s ease;
+    }
 }

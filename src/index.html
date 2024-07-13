@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Kartikkumar</title>
@@ -10,15 +11,42 @@
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-<script src="../src/main.js"></script>
+  <script src="../src/main.js"></script>
+
   <!-- font aswesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- mail js  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "MS8vHLNZ7NDs7ASYp",
+      });
+    })();
+  </script>
+  <!-- service_6y1wtww -->
+<script>
+  function sendMail(){
+  let parms = {
+  name: document.getElementById("sender_name").value,
+  email: document.getElementById("sender_mailId").value,
+  subject: document.getElementById("subject").value,
+  message: document.getElementById("sender_mobileNo").value,
+  message: document.getElementById("message").value,
+  }
+  emailjs.send("service_6q1df7x","template_gu3v7mr",parms)
+  }
+  </script>
+
 </head>
+
 <body class="mat-typography">
   <app-root></app-root>
 </body>
+
 </html>

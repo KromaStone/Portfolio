@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
-
+import { ProgressBarModule } from 'primeng/progressbar';
+// For dynamic progressbar demo
+import { ToastModule } from 'primeng/toast';
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [MatProgressBarModule,CommonModule],
+  imports:[ProgressBarModule,CommonModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
@@ -23,6 +24,10 @@ skills =[
   },{
     skillName: 'ASP .NET',
   skillPercent: 60
+  },
+  {
+    skillName: 'Figms',
+  skillPercent: 90
   },
 ]
 

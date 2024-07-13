@@ -13,11 +13,11 @@
 
 .services-container .services-box {
     flex: 1 1 30rem;
-    background: var(--sd-bg-color);
+    // background: var(--sd-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border: .2rem solid var(--bg-color);
+    border: .2rem solid  var(--sd-bg-color);
     transition: .5s ease;
 }
 
@@ -37,7 +37,7 @@
 
 .services-box p {
     font-size: 1.6rem;
-    margin: 1rem 0 .3rem;
+    margin: 1rem 0 1.9rem;
 }
 h2.heading {
     font-size: 6rem;

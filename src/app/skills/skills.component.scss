@@ -18,9 +18,6 @@ color: var(--sd-bg-color);
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin-top: 8rem;
-    // border: 1px solid forestgreen;
-    // padding: 4rem;
-    // margin: 4rem;
 }
 span.mdc-linear-progress__bar-inner {
     border-width: 20px;
@@ -37,20 +34,13 @@ border-color: red !important;
     // border-top-width: var(--mdc-linear-progress-active-indicator-height);
 }
 
-.mdc-linear-progress__bar .mdc-linear-progress__primary-bar{
-height: 50px;
-color: red;
-background-color: red;
-height: 106px;
-border: 20px solid red;
-}
 h2.heading {
     font-size: 6rem;
     font-weight: 900;
 }
 
-
-
-
-
-
+.skill-heading {
+    text-align: left;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
