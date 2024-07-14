@@ -26,7 +26,10 @@ skills =[
   skillPercent: 60
   },
   {
-    skillName: 'Figms',
+    skillName: 'REACT',
+  skillPercent: 90
+  },  {
+    skillName: 'SQL',
   skillPercent: 90
   },
 ]

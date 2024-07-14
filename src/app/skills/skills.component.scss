@@ -9,8 +9,10 @@
     font-weight: 900;
 }
 .skills-contianer p{
-font-size: 1.6rem;
-color: var(--sd-bg-color);
+    color: var(--sd-bg-color);
+    position: relative;
+    top: 1.8rem;
+    font-size: 2.2rem;
 }
 
 .skills-list {
@@ -19,20 +21,7 @@ color: var(--sd-bg-color);
     gap: 4rem;
     margin-top: 8rem;
 }
-span.mdc-linear-progress__bar-inner {
-    border-width: 20px;
-    border: 10px solid red !important;
-} 
 
-.mdc-linear-progress__bar-inner {
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    animation: none;
-    border-top-style: solid;
-border-color: red !important;
-    // border-top-width: var(--mdc-linear-progress-active-indicator-height);
-}
 
 h2.heading {
     font-size: 6rem;
