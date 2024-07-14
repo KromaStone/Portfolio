@@ -92,13 +92,16 @@
     box-shadow: 0 0 1rem var(--main-color);
     transform: scale(1.25);
 }
-.contact[_ngcontent-ng-c467441997] form[_ngcontent-ng-c467441997] .btn[_ngcontent-ng-c467441997] {
+.contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
     border: 0;
     height: 5rem;
     width: 22rem;
     font-size: 2.2rem;
+}
+.contact form .btn:hover {
+    border: 1px solid var(--main-color);
 }
 @import url("https://fonts.googleapis.com/css?family=Coiny");
 
