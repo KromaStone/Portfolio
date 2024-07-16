@@ -49,7 +49,7 @@ body {
 
 .container {
     display: grid;
-    height: 74vh;
+    height: 62vh;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -120,12 +120,51 @@ section {
     cursor: pointer;
 }
 
+.progressbar .p-progressbar.p-component.p-progressbar-determinate {
+    height: 2.6rem;
+    border-radius: 1.6rem;
 
+}
 
+.p-progressbar-value.p-progressbar-value-animate {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.menutest {
+    background: var(--bg-color);
+}
+
+.p-menubar.p-component {
+    color: var(--text-color);
+    background: var(--bg-color);
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0;
+}
+
+@media  (max-width :1682px){
+    // .portfolio-box .portfolio-layer{
+    //     padding: 0 2rem;
+    // }
+}
+@media (max-width: 1562) {
+    .portfolio-layer[_ngcontent-ng-c993137455] h4[_ngcontent-ng-c993137455] {
+        font-size: 2.2rem;
+    }
+    .portfolio-layer[_ngcontent-ng-c993137455] p[_ngcontent-ng-c993137455] {
+        font-size: 1.2rem;
+        margin: 0.3rem 0 1rem;
+    }
+    .portfolio-layer[_ngcontent-ng-c993137455] p[_ngcontent-ng-c993137455] {
+        font-size: 1.4rem;
+        margin: 0.3rem 0 1rem;
+    }
+}
 @media (max-width :1400px) {
     .subContainer2[_ngcontent-ng-c3145626779] img[_ngcontent-ng-c3145626779] {
-       width: 40rem;
-display: block;
+        width: 40rem;
+        display: block;
     }
 
     html {
@@ -144,8 +183,16 @@ display: block;
     }
 }
 
+@media (max-width: 964px) {
+    .portfolio-container {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem;
+    }
+}
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
+
     html {
         font-size: 46%;
         padding: 0 4rem;
@@ -206,6 +253,9 @@ display: block;
         margin-bottom: 3rem;
     }
 
+    .subContainer2 > img{
+        display: none;
+    }
     .portfolio h2 {
         margin-bottom: 3rem;
     }
@@ -213,9 +263,19 @@ display: block;
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .contact .heading {
+        margin-bottom: 4rem !important;
+    }
+    .heading[_ngcontent-ng-c1218943028] {
+        line-height: 1rem;
+    }
+    .about[_ngcontent-ng-c1218943028] P[_ngcontent-ng-c1218943028] {
+        margin: 4rem 0 0 0;
+    }
 }
 
-@media (max-width: 617px) {
+@media (max-width: 618px) {
     .portfolio-container {
         grid-template-columns: 1fr;
     }
@@ -230,11 +290,65 @@ display: block;
         }
     }
 
+    a.download-resume-btn.myWork {
+        width: 22rem;
+        font-size: 2rem;
+    }
+
+    .subContainer[_ngcontent-ng-c1218943028] img[_ngcontent-ng-c1218943028] {
+        width: 19rem;
+    }
+
+    .about P {
+        font-size: 2rem;
+        margin: 2rem 0 0 0;
+    }
+
+    .contact-details span {
+        display: block;
+        margin: 18px 8px;
+    }
+
+    .container {
+        height: auto;
+        margin: 3rem 0;
+    }
+
+    .services h2 {
+        margin-bottom: 5rem;
+    }
+
+    .skills-contianer {
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 4rem;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+
 }
 
-@media (max-width: 450px) {
+@media (max-width: 454px) {
     html {
         font-size: 50%;
+        padding: 0 2.4rem;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    div.hireMe:hover {
+        padding: 1.2rem 2rem;
+    }
+
+    .progressbar .p-progressbar.p-component.p-progressbar-determinate {
+        height: 2.2rem !important;
     }
 
     .contact form .input-box input {
@@ -246,11 +360,13 @@ display: block;
         align-items: center;
     }
 
-    .intro{
+    .intro {
         font-size: 6rem;
         line-height: 6rem;
         font-weight: 800;
+        margin: 0 1rem 0 0;
     }
+
     button.hireMe.btn1 {
         border-radius: 3rem;
         border: none;
@@ -268,48 +384,89 @@ display: block;
         width: 13.8rem;
         height: 4.6rem;
     }
- .skills-list {
+
+    .skills-list {
         grid-template-columns: 1fr !important;
-        gap: 3rem  !important;
-        margin-top: 6rem  !important;
+        gap: 3rem !important;
+        margin-top: 6rem !important;
     }
-    .skill-heading{
-        font-size: 1.8rem  !important;
-        margin-bottom: .6rem  !important;
+
+    .skill-heading {
+        font-size: 1.8rem !important;
+        margin-bottom: .6rem !important;
     }
+
     .progressbar .p-progressbar.p-component.p-progressbar-determinate {
         height: 2.2rem;
     }
+
     .subContainer2 {
-        display: none;}
+        display: none;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+
+    .services h2 {
+        margin-bottom: 4rem;
+        font-size: 4rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 4rem;
+        font-size: 5rem;
+    }
+
+    .contact form {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .services[_ngcontent-ng-c732378696] h2[_ngcontent-ng-c732378696] {
+        margin-bottom: 3rem;
+    }
+
 }
 
 
-@media (max-width: 320pc) {
+@media (max-width: 320px) {
     .btn {
         padding: 1rem 01.4rem;
     }
+
+    .social-media a {
+        margin: 2rem 1rem 0;
+
+    }
+
+    .contact[_ngcontent-ng-c467441997] form[_ngcontent-ng-c467441997] {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
 }
 
-.progressbar .p-progressbar.p-component.p-progressbar-determinate {
-    height: 2.6rem;
-    border-radius: 1.6rem;
-
+@media(max-with : 556px){
+    .subContainer2 img{
+        width: 24rem !important;
+    }
+    a.download-resume-btn.myWork{
+        display: block !important;
+    }
 }
 
-.p-progressbar-value.p-progressbar-value-animate {
-    background-color: var(--main-color);
-    color: var(--bg-color);
-}
 
-.menutest {
-    background: var(--bg-color);
-}
 
-.p-menubar.p-component {
-    color: var(--text-color);
-    background: var(--bg-color);
-    border: 0;
-    border-bottom: 1px solid;
-    border-radius: 0;
-}
+
+
+::-webkit-scrollbar-track {
+    background: none;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5px;
+  }

@@ -1,7 +1,15 @@
 <section class="portfolio" id="portfolio">
-    <h2 class="heading"> Latest Projects</h2>
+    <h2 class="heading"> My Services</h2>
     <div class="portfolio-container">
-        <div class="portfolio-box">
+        <div class="portfolio-box" *ngFor="let list of projectList ">
+            <img src="../../assets/{{list.backgroundImage}}" alt="img">
+            <div class="portfolio-layer">
+                <h4>{{list.heading}}</h4>
+                <p>{{list.description}}</p>
+                <i class="{{list.icon}}"></i>
+            </div>
+        </div>
+        <!-- <div class="portfolio-box">
             <img src="../../assets/images/1.jpg" alt="img">
             <div class="portfolio-layer">
                 <h4>Web Designer</h4>
@@ -40,14 +48,6 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 <i class="fa-solid fa-share-from-square"></i>
             </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="../../assets/images/1.jpg" alt="img">
-            <div class="portfolio-layer">
-                <h4>Web Designer</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <i class="fa-solid fa-share-from-square"></i>
-            </div>
-        </div>
+        </div> -->
     </div>
 </section>
