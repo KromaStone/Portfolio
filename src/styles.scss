@@ -69,7 +69,7 @@ body {
 }
 
 section {
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 
 
@@ -142,25 +142,31 @@ section {
     border-bottom: 1px solid;
     border-radius: 0;
 }
-
-@media  (max-width :1682px){
+.about a.download-resume-btn.myWork.respons {
+    display: none ;
+}
+@media (max-width :1682px) {
     // .portfolio-box .portfolio-layer{
     //     padding: 0 2rem;
     // }
 }
+
 @media (max-width: 1562) {
     .portfolio-layer[_ngcontent-ng-c993137455] h4[_ngcontent-ng-c993137455] {
         font-size: 2.2rem;
     }
+
     .portfolio-layer[_ngcontent-ng-c993137455] p[_ngcontent-ng-c993137455] {
         font-size: 1.2rem;
         margin: 0.3rem 0 1rem;
     }
+
     .portfolio-layer[_ngcontent-ng-c993137455] p[_ngcontent-ng-c993137455] {
         font-size: 1.4rem;
         margin: 0.3rem 0 1rem;
     }
 }
+
 @media (max-width :1400px) {
     .subContainer2[_ngcontent-ng-c3145626779] img[_ngcontent-ng-c3145626779] {
         width: 40rem;
@@ -253,9 +259,9 @@ section {
         margin-bottom: 3rem;
     }
 
-    .subContainer2 > img{
-        display: none;
-    }
+    // .subContainer2 > img{
+    //     display: none;
+    // }
     .portfolio h2 {
         margin-bottom: 3rem;
     }
@@ -267,11 +273,23 @@ section {
     .contact .heading {
         margin-bottom: 4rem !important;
     }
+
     .heading[_ngcontent-ng-c1218943028] {
         line-height: 1rem;
     }
+
     .about[_ngcontent-ng-c1218943028] P[_ngcontent-ng-c1218943028] {
         margin: 4rem 0 0 0;
+    }
+
+    h1.intro {
+        font-size: 6rem;
+        line-height: 6rem;
+        font-weight: 800;
+    }
+
+    img.profileImg {
+        width: 24rem;
     }
 }
 
@@ -331,6 +349,25 @@ section {
         padding: 4rem 0;
     }
 
+    h1.intro {
+        font-size: 6rem !important;
+        line-height: 6rem !important;
+    }
+
+    button.hireMe.btn1 {
+        padding: .8rem 2rem;
+        font-size: 2rem;
+        width: 13rem;
+        height: 5rem;
+    }
+
+    button.myWork {
+        padding: .8rem 2rem;
+        font-size: 2rem;
+        width: 14rem;
+        height: 5rem;
+    }
+
 }
 
 @media (max-width: 454px) {
@@ -355,17 +392,12 @@ section {
         width: 100%;
     }
 
-    .test {
-        display: none !important;
-        align-items: center;
-    }
-
-    .intro {
-        font-size: 6rem;
-        line-height: 6rem;
-        font-weight: 800;
-        margin: 0 1rem 0 0;
-    }
+    // .intro {
+    //     font-size: 6rem;
+    //     line-height: 6rem;
+    //     font-weight: 800;
+    //     margin: 0 1rem 0 0;
+    // }
 
     button.hireMe.btn1 {
         border-radius: 3rem;
@@ -400,9 +432,9 @@ section {
         height: 2.2rem;
     }
 
-    .subContainer2 {
-        display: none;
-    }
+    // .subContainer2 {
+    //     display: none;
+    // }
 
     section {
         padding: 4rem 0;
@@ -427,7 +459,29 @@ section {
         margin-bottom: 3rem;
     }
 
+    h1.intro {
+        font-size: 4rem !important;
+        line-height: 4rem !important;
+    }
+
+    button.hireMe.btn1 {
+        font-size: 1.8rem;
+        width: 12rem;
+        height: 4.4rem;
+    }
+
+    .button.myWork.btn2 {
+        font-size: 1.8rem;
+        width: 13rem;
+        height: 4.4rem;
+    }
+
+    .btn-container {
+        margin: 3rem 1rem 0 0 !important;
+        gap: 1.2rem !important;
+    }
 }
+
 
 
 @media (max-width: 320px) {
@@ -446,27 +500,56 @@ section {
     }
 }
 
-@media(max-with : 556px){
-    .subContainer2 img{
+@media(max-with : 556px) {
+    .subContainer2 img {
         width: 24rem !important;
     }
-    a.download-resume-btn.myWork{
+
+    a.download-resume-btn.myWork {
         display: block !important;
     }
 }
 
 
 
+@media (max-width: 472px) {
+    .subContainer2 img {
+        width: 16rem;
+    }
+
+    .container .subContainer.test {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .subContainer2 img {
+        width: 12rem;
+        top: -14px;
+        position: relative;
+    }
+
+    .container .subContainer.test {
+        display: none;
+    }
+
+   .container .about a.download-resume-btn.myWork.respons {
+        display: contents;
+    }
+}
+
 
 
 ::-webkit-scrollbar-track {
     background: none;
-  }
-  ::-webkit-scrollbar {
+}
+
+::-webkit-scrollbar {
     width: 10px;
     height: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: var(--main-color);
     border-radius: 5px;
-  }
+}

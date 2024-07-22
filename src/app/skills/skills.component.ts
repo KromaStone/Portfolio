@@ -14,23 +14,23 @@ export class SkillsComponent {
 skills =[
   {
     skillName: 'HTML',
-  skillPercent: 45
+  skillPercent: 90
   },{
     skillName: 'CSS',
-  skillPercent: 89
+  skillPercent: 85
   },{
     skillName: 'ANGULAR',
   skillPercent: 80
   },{
     skillName: 'ASP .NET',
-  skillPercent: 60
+  skillPercent: 70
   },
   {
     skillName: 'REACT',
-  skillPercent: 90
+  skillPercent: 72
   },  {
     skillName: 'SQL',
-  skillPercent: 90
+  skillPercent: 70
   },
 ]
 

@@ -106,3 +106,26 @@ a.download-resume-btn.myWork:hover{
     border: 1px solid var(--main-color);
     color: var(--main-color);
 }
+
+@media (max-width: 320px) {
+    h1.intro {
+        font-size: 3rem !important;
+        line-height: 3rem !important;
+    }
+  .btn-container button.hireMe.btn1 {
+        font-size: 1.6rem !important;
+        height: 4rem;
+        width: 11.6rem;
+    }
+  .btn-container > button.myWork{
+        font-size: 1.6rem !important;
+        height: 4rem;
+        width: 12.6rem;
+    }
+   
+    .btn-container{
+        margin: 3rem 1rem 0 0 !important;
+    gap: 1.2rem !important;
+    }
+}
+
