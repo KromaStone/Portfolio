@@ -1,7 +1,12 @@
+.about-container{
+    border: 1px solid red;
+}
+
 .heading {
     font-size: 6rem;
     line-height: 8rem;
     font-weight: 900;
+    text-align: left;
     // text-shadow: 2px 2px 5px var(--sd-bg-color); 
 }
 
@@ -53,7 +58,7 @@
 }
 
 a.download-resume-btn.myWork {
-    width: 24rem;
+    width: 28rem;
     font-size: 2.4rem;
     display: flex;
     text-align: center;

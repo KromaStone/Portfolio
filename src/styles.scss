@@ -1,6 +1,8 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
+
 /* Order */
 @layer reset, primeng;
 
@@ -24,12 +26,12 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: "Nunito", sans-serif;
-    line-height: 2rem;
+    // line-height: 2rem;
     font-weight: 600;
 }
 
 :root {
-    --bg-color: #000000;
+    --bg-color: #141414;
     --sd-bg-color: #585858;
     --sd-tr-bg-color: #292929;
     --text-color: #fff;
@@ -39,7 +41,7 @@
 
 html {
     font-size: 62.5%;
-    padding: 0 20rem;
+    // padding: 0 20rem;
 }
 
 body {
@@ -47,9 +49,9 @@ body {
     color: var(--text-color);
 }
 
-.container {
+.Banner {
     display: grid;
-    height: 62vh;
+    height: 70vh;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -69,7 +71,7 @@ body {
 }
 
 section {
-    padding: 5rem 0;
+    padding: 5rem 7rem;
 }
 
 
@@ -85,12 +87,28 @@ section {
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
-    font-size: 1.6rem;
+    // box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.8rem;
     color: var(--bg-color);
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+width: 20rem;
+
+    // border-radius: 3rem;
+    // border: none;
+    // padding: 1.2rem 2.6rem;
+    // border: 1px solid var(--main-color);
+    // background-color: var(--main-color);
+    // color: var(--bg-color);
+    // font-size: 2.4rem;
+    // font-weight: 600;
+    // width: 20rem;
+    // height: 5.6rem;
+    // text-decoration: none;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 }
 
 .btn:hover {
@@ -141,10 +159,10 @@ section {
 
 .p-menubar.p-component {
     color: var(--text-color);
-    background: var(--bg-color);
-    border: 0;
-    border-bottom: 1px solid;
-    border-radius: 0;
+    background: #000000;
+    border: 0px;
+    border-radius: 0px;
+    height: 6.8rem;
 }
 .about a.download-resume-btn.myWork.respons {
     display: none ;
@@ -190,7 +208,7 @@ ul#pn_id_1 {
 }
 
 @media(max-width:1024px) {
-    .container {
+    .Banner {
         height: 48vh;
     }
 
@@ -337,7 +355,7 @@ ul#pn_id_1 {
         margin: 18px 8px;
     }
 
-    .container {
+    .Banner {
         height: auto;
         margin: 3rem 0;
     }
@@ -386,7 +404,7 @@ ul#pn_id_1 {
         padding: 0 2.4rem;
     }
 
-    .container {
+    .Banner {
         display: flex;
     }
 
@@ -527,7 +545,7 @@ ul#pn_id_1 {
         width: 16rem;
     }
 
-    .container .subContainer.test {
+    .Banner .subContainer.test {
         display: none;
     }
 }
@@ -539,11 +557,11 @@ ul#pn_id_1 {
         position: relative;
     }
 
-    .container .subContainer.test {
+    .Banner .subContainer.test {
         display: none;
     }
 
-   .container .about a.download-resume-btn.myWork.respons {
+   .Banner .about a.download-resume-btn.myWork.respons {
         display: contents;
     }
 }

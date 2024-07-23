@@ -1,8 +1,14 @@
-// .container.hero1{
-//     background: url(../../assets/backgrounds/bg1.jpg);
-//     background-position: center;
-//     background-repeat: no-repeat;
-// }
+.Banner{
+    // background: url(../../assets/backgrounds/bg1.jpg);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7455357143) 0%, rgb(38 38 38) 100%);
+
+}
+.subContainer{
+    margin-left:  7rem;
+    text-transform: capitalize  ;
+}
 .mainColor {
     color: var(--main-color);
 }
@@ -13,15 +19,17 @@
 }
 
 .intro {
-    font-size: 8rem;
+    font-size: 2.4rem;
     line-height: 8rem;
-    font-weight: 900;
+    font-weight: 800;
     margin: 0 1rem 0 0;
 }
-.intro > span{
+.nameText{
+    display: block;
+    font-size: 8rem;
     font-weight: 900;
+    margin: 4rem 0;
 }
-
 
 .btn-container{
     margin: 3rem 0 0 0 ;
@@ -37,7 +45,7 @@
     color: var(--bg-color);
     font-size: 2.4rem;
     font-weight: 600;
-    width: 16rem;
+    width: 20rem;
     height: 5.6rem;
     text-decoration: none;
     display: flex;
@@ -138,3 +146,7 @@ a.download-resume-btn.myWork:hover{
     }
 }
 
+.test11{
+    height: auto;
+    width: 100%;
+}
