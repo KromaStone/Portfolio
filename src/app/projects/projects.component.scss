@@ -105,6 +105,15 @@ h2.heading {
     .portfolio-container .portfolio-box {
         margin: .1rem auto;
     }
+    .portfolio-container[_ngcontent-ng-c993137455] {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr!important;
+        gap: 4rem;
+    }
+    .portfolio-container[_ngcontent-ng-c993137455] .portfolio-box[_ngcontent-ng-c993137455] {
+        margin: 0.1rem auto;
+        width: auto;
+    }
 }
 @media (max-width: 530px){
     .portfolio-container {
