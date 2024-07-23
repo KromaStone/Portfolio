@@ -1,3 +1,8 @@
+// .container.hero1{
+//     background: url(../../assets/backgrounds/bg1.jpg);
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
 .mainColor {
     color: var(--main-color);
 }
@@ -34,6 +39,10 @@
     font-weight: 600;
     width: 16rem;
     height: 5.6rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 div .hireMe:hover {

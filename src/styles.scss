@@ -110,6 +110,10 @@ section {
     font-weight: 600;
     width: 16rem;
     height: 5.6rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .myWork:hover {
@@ -145,6 +149,12 @@ section {
 .about a.download-resume-btn.myWork.respons {
     display: none ;
 }
+// p-menubarsub.p-element
+ul#pn_id_1 {
+    background: black;
+}
+
+
 @media (max-width :1682px) {
     // .portfolio-box .portfolio-layer{
     //     padding: 0 2rem;

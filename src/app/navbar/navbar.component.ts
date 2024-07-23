@@ -6,6 +6,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { InputTextModule } from 'primeng/inputtext';
 import { CommonModule } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
+import { Router } from '@angular/router';
 @Component({
     selector: 'app-navbar',
     standalone: true,
@@ -15,30 +16,44 @@ import { RippleModule } from 'primeng/ripple';
 })
 export class NavbarComponent implements OnInit {
     items: MenuItem[] | undefined;
+    constructor(private router: Router) {}
 
     ngOnInit() {
         this.items = [
             {
                 label: 'Home',
-                icon: 'pi pi-home'
+                // route:'/test'
+                command: () => {
+                    this.router.navigate(['/home']);
+                }
             },
             {
                 label: 'About',
-                icon: 'pi pi-star'
+                 command: () => {
+                    this.router.navigate(['/about']);
+                }
             }, {
-                label: 'Skill',
-                icon: 'pi pi-star'
+                label: 'Skills',
+                 command: () => {
+                    this.router.navigate(['/skills']);
+                }
             }, {
                 label: 'Services',
-                icon: 'pi pi-star'
+                 command: () => {
+                    this.router.navigate(['/service']);
+                }
             },
             {
                 label: 'Project',
-                icon: 'pi pi-star'
+                 command: () => {
+                    this.router.navigate(['/project']);
+                }
             },
             {
                 label: 'Contact',
-                icon: 'pi pi-star'
+                 command: () => {
+                    this.router.navigate(['/contact']);
+                }
             },
             // {
             //     label: 'Projects',

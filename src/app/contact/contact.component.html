@@ -1,45 +1,49 @@
 <section class="contact" id="contact">
-    <h2 class="heading">Contact Me</h2>
-    <form (submit)="sendEmail($event)">
-            <div class="input-box">
-                <input id="sender_name"  name="sender_name" type="text" placeholder="Full Name">
-                <input id="sender_mailid" name="sender_mailid" type="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input id="sender_mobileNo" name="sender_mobileNo" type="number" placeholder="Mobile Number">
-                <input id="subject" type="text" name="subject" type="text" placeholder="Email Subject">
-            </div>
-            <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-    
-            <input type="submit" value="Send" class="btn">
-    </form>
-    <p class="seperation">-or-</p>
-    <div class="social-media">
-        <a target="_blank" class="icons1" href="https://github.com/KromaStone"> <i class="fa-brands fa-github "
-                style="color: #ffffff;"></i> </a>
-        <a target="_blank" class="icons1" href="https://www.behance.net/kartikkumar134"><i
-                class="fa-brands fa-square-behance" style="color: #ffffff;"></i></a>
-        <a target="_blank" class="icons1"
-            href="https://www.linkedin.com/in/kartik-kumar-24b30b288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-                class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
-        <a target="_blank" class="icons1" href="https://x.com/_G_root?t=GuRZFJgSx9h2RnFKpgVxGQ&s=09"><i
-                class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-        <a target="_blank" class="icons1" href="https://www.instagram.com/kartikkumar_02?igsh=bTRjYmNlNWhiNGp2"><i
-                class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-        <a target="_blank" class="icons1" href="https://wa.link/31ndpv"><i class="fa-brands fa-whatsapp"
-                style="color: #ffffff;"></i></a>
-    </div>
+        <h2 class="heading">Contact Me</h2>
+        <form (submit)="sendEmail($event)">
+                <div class="input-box">
+                        <input id="sender_name" name="sender_name" type="text" placeholder="Full Name">
+                        <input id="sender_mailid" name="sender_mailid" type="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                        <input id="sender_mobileNo" name="sender_mobileNo" type="number" placeholder="Mobile Number">
+                        <input id="subject" type="text" name="subject" type="text" placeholder="Email Subject">
+                </div>
+                <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+                <input type="submit" value="Send" class="btn">
+        </form>
+        <p class="seperation">-or-</p>
+        <div class="social-media">
+                <a target="_blank" class="icons1" href="https://github.com/KromaStone"> <i class="fa-brands fa-github "
+                                style="color: #ffffff;"></i> </a>
+                <a target="_blank" class="icons1" href="https://www.behance.net/kartikkumar134"><i
+                                class="fa-brands fa-square-behance" style="color: #ffffff;"></i></a>
+                <a target="_blank" class="icons1"
+                        href="https://www.linkedin.com/in/kartik-kumar-24b30b288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                <a target="_blank" class="icons1" href="mailto: kartikkumar0325@gmail.com"><i class="fa-solid fa-envelope"
+                                style="color: #ffffff;"></i></a>
+                <a target="_blank" class="icons1" href="https://x.com/_G_root?t=GuRZFJgSx9h2RnFKpgVxGQ&s=09"><i
+                                class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                <!-- <a target="_blank" class="icons1"
+                        href="https://www.instagram.com/kartikkumar_02?igsh=bTRjYmNlNWhiNGp2"><i
+                                class="fa-brands fa-instagram" style="color: #ffffff;"></i></a> -->
+                <a target="_blank" class="icons1" href="https://wa.link/31ndpv"><i class="fa-brands fa-whatsapp"
+                                style="color: #ffffff;"></i></a>
+
+        </div>
 
 
-    <!-- <div class="displayMessage" *ngIf="succes==true" > The Message have send</div> -->
-    <!-- <div  class="displayMessage">
+        <!-- <div class="displayMessage" *ngIf="succes==true" > The Message have send</div> -->
+        <!-- <div  class="displayMessage">
         <div class="bg">hello response</div>
         <div class="blob"></div>
       </div> -->
-      
-      <div [className]="succes==1?'displayMessage':'displayMessageError'" *ngIf="succes==0 || succes==1">
-      <div class="bg">{{resaponseMessage}}</div>
-      <div [className]="succes==1?'blob':'blobError'"></div>
-      </div>
+
+        <div [className]="succes==1?'displayMessage':'displayMessageError'" *ngIf="succes==0 || succes==1">
+                <div class="bg">{{resaponseMessage}}</div>
+                <div [className]="succes==1?'blob':'blobError'"></div>
+        </div>
 </section>
 <!-- [className]="weatherService.today==true?'underline underline-today':'underline underline-week'"> -->
