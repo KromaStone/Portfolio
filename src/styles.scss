@@ -215,6 +215,9 @@ ul#pn_id_1 {
     section {
         padding: 6rem 0;
     }
+    img.profileImg {
+        width: 30rem;
+    }
 }
 
 @media (max-width: 964px) {
@@ -317,7 +320,12 @@ ul#pn_id_1 {
     }
 
     img.profileImg {
-        width: 24rem;
+        width: 20rem;
+        margin: 1rem;
+    }
+    .main-header{
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -354,7 +362,9 @@ ul#pn_id_1 {
         display: block;
         margin: 18px 8px;
     }
-
+.nameText{
+    line-height: 8rem;
+}
     .Banner {
         height: auto;
         margin: 3rem 0;
@@ -378,7 +388,7 @@ ul#pn_id_1 {
     }
 
     h1.intro {
-        font-size: 6rem !important;
+        font-size: 20%;
         line-height: 6rem !important;
     }
 
@@ -488,8 +498,8 @@ ul#pn_id_1 {
     }
 
     h1.intro {
-        font-size: 4rem !important;
-        line-height: 4rem !important;
+        font-size: 10% ;
+        // line-height: 4rem ;
     }
 
     button.hireMe.btn1 {
@@ -511,7 +521,6 @@ ul#pn_id_1 {
 }
 
 
-
 @media (max-width: 320px) {
     .btn {
         padding: 1rem 01.4rem;
@@ -529,15 +538,21 @@ ul#pn_id_1 {
 }
 
 @media(max-with : 556px) {
+    .subContainer2{
+        display: none;
+    }
     .subContainer2 img {
-        width: 24rem !important;
+        width: 24rem ;
     }
 
     a.download-resume-btn.myWork {
         display: block !important;
     }
+   .subContainer h1.intro {
+        font-size: 1rem !important;
+        color: red !important;
+    }
 }
-
 
 
 @media (max-width: 472px) {
@@ -546,6 +561,9 @@ ul#pn_id_1 {
     }
 
     .Banner .subContainer.test {
+        display: none;
+    }
+    .subContainer2{
         display: none;
     }
 }
