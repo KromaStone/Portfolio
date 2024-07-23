@@ -327,7 +327,7 @@ ul#pn_id_1 {
     }
 }
 
-@media (max-width: 618px) {
+@media (max-width: 618px) { 
     .portfolio-container {
         grid-template-columns: 1fr;
     }
@@ -370,10 +370,6 @@ ul#pn_id_1 {
 .nameText{
     line-height: 8rem;
 }
-    .Banner {
-        height: auto;
-        margin: 0 3rem ;
-    }
 
     .services h2 {
         margin-bottom: 5rem;
@@ -423,8 +419,12 @@ ul#pn_id_1 {
     }
     .Banner {
         display: flex;
+        height: 62rem;
     }
-
+    .about {
+        flex-direction: column;
+        height: 66rem;
+    }
     div.hireMe:hover {
         padding: 1.2rem 2rem;
     }
