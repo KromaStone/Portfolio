@@ -12,8 +12,14 @@ export class ServicesComponent {
 projectList=[
   {
     title:"Weather App",
-    description:'I have developed a web application using Angular, leveraging TypeScript, HTML, and CSS for the front-end implementation. The application integrates a API sourced from RapidAPI.com to enhance its functionality. Upon searching for a location, the application displays weather details for the specified city, including forecasts for the next 7 days, hourly updates for the next 7 hours, air quality index, and rain probability and other details.',
+    description:'I have developed this web application using Angular, leveraging TypeScript, HTML, and CSS for the front-end implementation. The application integrates a API sourced from RapidAPI.com to enhance its functionality. Upon searching for a location, the application displays weather details for the specified city, including forecasts for the next 7 days, hourly updates for the next 7 hours, air quality index, and rain probability and other details.',
     link:'https://weather-app-phi-sand.vercel.app/'
+  },
+
+  {
+    title:"Tesla",
+    description:'I am developing a robust web application using Angular with TypeScript, HTML, and CSS for the front-end implementation. The project will be a complete and scalable application with both front-end and back-end components. Although it is not a replica of the original website, it will feature significant differences and improvements in functionality, performance, usability, security, and design. For the back-end, I am using ASP.NET Core.',
+    link:'tesla-app-five.vercel.app'
   },
   {
     title:"National Park Trail",
